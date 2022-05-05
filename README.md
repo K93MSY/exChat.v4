@@ -14,7 +14,7 @@ node server.js
 ### Create Server🔨
 
 ```
-cd server
+cd ChatServer
 npm install ws
 node server.js
 
