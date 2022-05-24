@@ -2,7 +2,7 @@
 ## !!!In the middle of production!!!
 ### A simple program that allows you to create your own chat server
 
-#### <<MIT>>
+#### \\MIT//
 
 ### Create Cliant🔨
 -Install Nodejs[https://nodejs.org/]
