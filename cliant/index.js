@@ -1,5 +1,7 @@
-      $(function () {
-        var socket = io();
+var serverip = 0;
+
+$(function () {
+        var socket = io.connect(serverip);
         $('form').submit(function(){
           socket.emit('chat message', $('#m').val());
           $('#m').val('');
