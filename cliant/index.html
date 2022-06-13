@@ -11,38 +11,18 @@
         h1{
             color:#01a317;
         }
-        #chatcanvas{
-            background-image: url("https://i.imgur.com/YiEHO5w.png");
-            color:#01849b;
-            position:absolute;
-            top:50%;
-            left:20%;
-            height:8%;
-            width:20%;
-            background-position: center;
-            text-align: center;
-            margin-top:auto;
-            display: block;
-        }
         #ipt1{
             width:20%;
         }
     </style>
         <!--JAVASCRIPT-->
-    <script>
-        var IPP;
-        function ct() {
-            var IPP = document.getElementById("ipt1").value;
-            console.log("Connecting "+ IPP)
-            let connection = new WebSocket(IPP);
-            
-     }
-    </script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 </head>
 <body>
     <h1>exChat.v4</h1>
     <input type="text" placeholder="Server IP or Url is Here!(The first is ws or wss)" id="ipt1"></input>
     <button onclick="ct()" id="ct">Connect</button>
-    <a id="chatcanvas">Chat will Show Here</a>
+    <div id="msgs"></div>
 </body>
 </html>
